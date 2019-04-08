@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Number Golf
+    </title>
+    <link rel="icon" href="flag-solid.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <h1>Numb3r G<span class="fa fa-golf-ball"></span>lf</h1>
+        <div id="menu">
+            <p>Make a number using only the symbols <span class="mono">1</span>, <span class="mono">+</span>, <span class="mono">*</span>, <span class="mono">(</span>, <span class="mono">)</span>, in as few characters as possible.</p>
+            <p>
+            <input id="start" type="button" value="Start!">
+            <input id="howToPlay" type="button" value="How to play">
+            </p>
+            <p>
+            <label> Difficulty: 
+            <select id="difficulty">
+                <option value="easy" selected>Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            </label>
+            </p>
+        </div>
+        <div id="game" class="hide">
+            <p class="question">
+            <span id="requiredNumber"></span> = <span id="answer">?</span><br>
+            Par: <span id="par"></span><br>
+            <input id="equation" type="text"><br>
+            <span id="message"></span><br>
+            <input id="check" type="button" value="Submit!">
+            <input id="nextRound" class="hide" type="button" value="New number">
+            <input id="returnToMenu" type="button" value="Return to menu">
+            </p>
+        </div>
+        <div id="howto" class="hide">
+            <h2>How to play</h2>
+            <p class="howto-text">
+            Try to make the number shown on the screen using only the characters <span class="mono">1</span>, <span class="mono">+</span>, <span class="mono">*</span>, <span class="mono">(</span> and <span class="mono">)</span>. You are allowed to "concatenate" 2 numbers together, like 11 and 111, but addition and multiplication must be written out explicitly. Some examples of valid and invalid equations:<br>
+            </p>
+            <ul>
+                <li>1*(111+1) (valid)</li>
+                <li>(1+11)(1+11) (invalid because no explicit <span class="mono">*</span> between brackets)</li>
+                <li>11*(1+(1*11))+(1+1) (valid)</li>
+                <li>(1+1)*((1+1+1)*11 (invalid because parentheses are not balanced)</li>
+            </ul>
+            <p>
+            <input id="returnToMenu2" type="button" value="Return to menu">
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p class="tiny">
+            Made with love <span class="fa fa-heart"></span> by spdskatr<br>
+            Icons courtesy of Font Awesome (<a href="https://fontawesome.com/license">License</a>)
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>

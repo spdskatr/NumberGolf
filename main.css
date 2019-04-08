@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Patrick+Hand|Roboto+Mono');
+
+* { box-sizing: border-box; }
+
+h1 {
+    width: 100%;
+    font-size: 48px;
+    font-family: "Major Mono Display", monospace;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "Patrick Hand", cursive;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Patrick Hand", cursive;
+    line-height: 1.5;
+}
+
+input, label, select {
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Patrick Hand", cursive;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #cdd2ff;
+}
+
+li {
+    font-family: "Patrick Hand", cursive;
+    line-height: 1.5;
+}
+
+input, select {
+    background-color: #f8f8f8;
+    color: #080808;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#equation {
+    width: 300px;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fa-golf-ball {
+    transform: scale(0.8);
+}
+
+.hide {
+    display: none;
+}
+
+.mono {
+    font-family: "Roboto Mono";
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 4px;
+}
+
+.question {
+    font-size: 24px;
+}
+
+.tiny {
+    font-size: 14px;
+}
