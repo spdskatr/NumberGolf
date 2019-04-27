@@ -151,7 +151,7 @@ function init() {
                     } else if (bestc) {
                         optimal[n][0] = Math.min(optimal[n][0], optimal[i][0] + optimal[comp][1] + 3);
                     } else {
-                        optimal[n][0] = Math.min(optimal[n][0], optimal[i][1] + optimal[comp][1] + 1);
+                        optimal[n][0] = Math.min(optimal[n][0], optimal[i][0] + optimal[comp][0] + 1);
                     }
                 }
             }
