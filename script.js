@@ -84,7 +84,7 @@ function newGame() {
 }
 
 function equationInput() {
-    message.textContent = "Length: " + equation.value.length;
+    message.textContent = "Length: " + countChars(equation.value);
     answer.textContent = "?";
 	
 }
