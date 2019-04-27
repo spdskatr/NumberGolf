@@ -107,6 +107,12 @@ function viewHowTo() {
     menu.classList.add("hide");
 }
 
+function handleKeyPress(ev) {
+	if (ev.key == "Enter") {
+		checkEqu();
+	}
+}
+
 // Dynamic programming to find the length of the optimal string for every integer from 1 to 200
 // Also accidental spoiler for problem Building Integers from Australian Informatics Competition 1998
 // http://orac.amt.edu.au/cgi-bin/train/problem.pl?problemid=19
@@ -162,4 +168,5 @@ returnToMenu.onclick = backToMenu;
 returnToMenu2.onclick = backToMenu;
 howToPlay.onclick = viewHowTo;
 equation.oninput = resetAnswer;
+equation.onkeypress = handleKeyPress;
 init();
