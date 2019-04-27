@@ -83,9 +83,10 @@ function newGame() {
     nextRound.classList.add("hide");
 }
 
-function resetAnswer() {
-    message.textContent = "";
+function equationInput() {
+    message.textContent = "Length: " + equation.value.length;
     answer.textContent = "?";
+	
 }
 
 function startGame() {
@@ -167,6 +168,6 @@ nextRound.onclick = newGame;
 returnToMenu.onclick = backToMenu;
 returnToMenu2.onclick = backToMenu;
 howToPlay.onclick = viewHowTo;
-equation.oninput = resetAnswer;
+equation.oninput = equationInput;
 equation.onkeypress = handleKeyPress;
 init();
